@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+      }
+      .imageskotak {
+        width: 500px;
+        height: 250px;
+        background-color: aquamarine;
+        border: 1px solid powderblue;
+      }
+      .imageskotak1 {
+        width: 500px;
+        height: 250px;
+        background-color: salmon;
+        border: 1px solid powderblue;
+      }
+      .imageskotak2 {
+        width: 500px;
+        height: 250px;
+        background-color: palegreen;
+        border: 1px solid powderblue;
+      }
+      .imageskotak3 {
+        width: 500px;
+        height: 250px;
+        background-color: rosybrown;
+        border: 1px solid powderblue;
+      }
+      .imageskotak4 {
+        width: 500px;
+        height: 250px;
+        background-color: tan;
+        border: 1px solid powderblue;
+      }
+      .containerimage {
+        width: 500px;
+        height: 100px;
+        border: 1px solid powderblue;
+      }
+      .images {
+        width: 85px;
+        height: 45px;
+        margin: 20px;
+        float: left;
+      }
+    </style>
+
+    <script>
+      function setfoto1() {
+        document.getElementById("displaygambar").className = "imageskotak1";
+      }
+      function setfoto2() {
+        document.getElementById("displaygambar").className = "imageskotak2";
+      }
+      function setfoto3() {
+        document.getElementById("displaygambar").className = "imageskotak3";
+      }
+      function setfoto4() {
+        document.getElementById("displaygambar").className = "imageskotak4";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="displaygambar" class="imageskotak"></div>
+      <div class="containerimage">
+        <button class="images" onclick="setfoto1()">Button 1</button>
+        <button class="images" onclick="setfoto2()">Button 2</button>
+        <button class="images" onclick="setfoto3()">Button 3</button>
+        <button class="images" onclick="setfoto4()">Button 4</button>
+      </div>
+    </div>
+  </body>
+</html>
